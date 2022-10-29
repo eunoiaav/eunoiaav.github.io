@@ -52,11 +52,12 @@ nav > ul > li {
   font-family: 'Lato', sans-serif; 
   font-size: large;
   padding: 1rem;
+  text-transform: uppercase;
 }
 
 nav > ul > li > a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 
