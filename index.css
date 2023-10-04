@@ -1,8 +1,15 @@
+
+
+@font-face {
+  font-family: Roxborough-CF;
+  src: url(./fonts/Roxborough-CF.ttf);
+}
+
 html,
 body {
   margin: 0;
   height: 100vh;
-  font-family: 'Belleza', sans-serif;
+  font-family: "Roxborough-CF", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -10,31 +17,32 @@ section.landing {
   height: 100vh;
   box-sizing: border-box;
   height: 100%;
-  background-image: url('/images/banner.jpg');
+  background-image: url("/images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
 }
 
 /* HEADER */
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   padding: 0 2rem;
   color: white;
 }
 
-header > h2 {
-  font-size: xx-large;
+/* EUNOIS BY ARYAVANI TITLE */
+header > h1 {
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
-header > a {
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
-  font-size: large;
-  font-weight: 400;
-  color: white;
+div.header__contact {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0.5rem 0;
 }
 
 header > a:hover {
@@ -52,12 +60,11 @@ nav > ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 nav > ul > li {
-  font-family: 'Lato', sans-serif;
-  font-size: large;
+  font-size: small;
   padding: 1rem;
   text-transform: uppercase;
 }
@@ -67,10 +74,36 @@ nav > ul > li > a {
   color: white;
 }
 
+/* ABOUT SECTION */
+section.about {
+  background-color: #F1E9E2;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+section.about > h2 {
+  margin: 0 0 0.8rem 0;
+}
+
+section.about > p {
+  max-width: 800px;
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  margin: 1.2rem auto;
+}
+
+section.about > img {
+  position: absolute;
+  left: 2rem;
+  bottom: 0rem;
+}
+
 /* UNIVERSAL CLASSES */
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 400ms ease-in;
 }
 
 .fade-in.appear {
