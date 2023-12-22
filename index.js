@@ -1,9 +1,9 @@
 // FADE IN INTERSECTION OBSERVERS
-const fadeInNodes = document.querySelectorAll('.fade-in');
+const fadeInNodes = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
   threshold: 0.5,
-  rootMargin: '0px 0px 100px 0px',
+  rootMargin: "0px 0px 100px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver((fadeInNodes) => {
@@ -11,8 +11,8 @@ const appearOnScroll = new IntersectionObserver((fadeInNodes) => {
     if (!node.isIntersecting) {
       return;
     } else {
-      node.target.classList.add('appear');
-      appearOnScroll.unobserve(entry.target);
+      node.target.classList.add("appear");
+      appearOnScroll.unobserve(node.target);
     }
   });
 }, appearOptions);
