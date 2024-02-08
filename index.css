@@ -111,6 +111,11 @@ section.about {
   position: relative;
 }
 
+section.therapist {
+  background-color: #51645e;
+  color: white;
+}
+
 section.about > h2 {
   margin: 0 0 0.8rem 0;
   font-size: clamp(1.2rem, 2vw, 2rem);
